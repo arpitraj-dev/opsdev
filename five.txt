@@ -1,0 +1,39 @@
+Aws cli -> Install & Add to path
+
+aws configure
+IAM - creation of key
+
+main.tf
+provider aws {
+    region = "ap-south-1"
+}
+
+resource "aws_instance" "ec_2_machine" {
+    ami = "ami-0af9569868786b23a"
+    instance_type = "t2.micro"
+    count = 3
+    tags = {
+        Name = "terraform ec2"
+    }
+}
+
+resource "aws_s3_bucket" "demo_bucket" {
+    bucket = "super-unique-named-bucked-daksh"
+    tags = {
+        Name = "terra demo"
+    }
+}
+
+resource "aws_s3_bucket_object" "text_file" {
+    bucket = aws_s3_bucket.demo_bucket.bucket
+    key = "supersecret.txt"
+    source = "./sample.txt"
+}
+
+terraform init
+ terraform plan
+terraform apply
+terraform destroy 
+
+ Sample1.txt
+ Hellow..welcome to terraform
