@@ -1,8 +1,7 @@
 #Cmd as administrator ➖
 minikube start --driver=docker
 
- minikube status
-kubectl get nodes
+
 
 #CMD
 minikube start
