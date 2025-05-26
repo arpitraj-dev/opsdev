@@ -128,6 +128,4 @@ docker-compose up
 
  Step 5: Access the Applications  
 Check logs from App 2 to see the response from App 1: docker-compose logs app2 You should see: Response from App 1: Hello from App 1!  Manually test App 1 by opening a browser and visiting: http://localhost:5000
-
-
-
+ docker-compose logs app2
