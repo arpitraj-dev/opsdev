@@ -1,0 +1,77 @@
+.war based project banayenge  
+
+WEB-INF/web.xml
+
+ <plugin>
+ <groupId>org.apache.maven.plugins</groupId>
+ <artifactId>maven-war-plugin</artifactId>
+ <configuration>
+ <webXml>src\main\webapp\WEB-INF\index.jsp</webXml> (mention which
+page to start)
+ </configuration>
+ </plugin>
+
+index.html
+
+<html>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>
+
+
+
+maven update, clean, build, install
+
+GIT push the project
+
+
+
+Jenkins run 
+-> iska id password, jenkins ka C me program files me jaake, /secrets daalenge
+
+plugins -> Deploy to Container Plugin, maven integration & git & GitHub Plugin
+
+New item pe click karna hai
+phir Clean and install 
+
+**/*.war
+
+tomcat-users.xml
+
+<?xml version='1.0' encoding='cp1252'?>
+<tomcat-users xmlns="http://tomcat.apache.org/xml"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
+              version="1.0">
+
+
+  <!-- Roles Declaration -->
+  <role rolename="manager-gui"/>
+  <role rolename="manager-script"/>
+
+
+  <!-- Users with assigned roles -->
+  <user username="admin" password="admin" roles="manager-gui"/>
+  <user username="tomcat" password="tomcat" roles="manager-script"/>
+
+
+  <!-- Example roles and users for the examples app (optional, not active) -->
+  <!--
+  <role rolename="tomcat"/>
+  <role rolename="role1"/>
+  <user username="tomcat" password="changeit" roles="tomcat"/>
+  <user username="both" password="changeit" roles="tomcat,role1"/>
+  <user username="role1" password="changeit" roles="role1"/>
+  -->
+
+
+</tomcat-users>
+
+
+tomcat url
+
+http://localhost:8000/manager/text
+
+Phir build now kr dena
+
