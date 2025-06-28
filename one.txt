@@ -44,7 +44,7 @@ public class AppTest {
    }
 }
 
+gradle init
 GRADLE(in terminal)
 GROOVY
-gradle init
 gradle build 
