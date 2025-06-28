@@ -24,8 +24,8 @@ Dependencies
 </dependency>
 
 Main -> folder(resources) -> file(config.properties)
-username=abc;
-password=123;
+username=abc
+password=abc@1234
 
 AppTest.java
 package com.dsce.finalfirst;
