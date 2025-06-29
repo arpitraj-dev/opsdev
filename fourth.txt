@@ -4,9 +4,6 @@ minikube start --driver=docker
  minikube status
 kubectl get nodes
 
-#CMD
-minikube start
-minikube status
 
 #pod.yaml
 
