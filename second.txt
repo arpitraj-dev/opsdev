@@ -6,8 +6,7 @@ WEB-INF/web.xml
  <groupId>org.apache.maven.plugins</groupId>
  <artifactId>maven-war-plugin</artifactId>
  <configuration>
- <webXml>src\main\webapp\WEB-INF\index.jsp</webXml> (mention which
-page to start)
+ <webXml>src\main\webapp\WEB-INF\index.html</webXml> 
  </configuration>
  </plugin>
 
@@ -33,7 +32,7 @@ Jenkins run
 plugins -> Deploy to Container Plugin, maven integration & git & GitHub Plugin
 
 New item pe click karna hai
-phir Clean and install 
+phir lean install 
 
 **/*.war
 
