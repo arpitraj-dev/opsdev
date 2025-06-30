@@ -32,7 +32,7 @@ Jenkins run
 plugins -> Deploy to Container Plugin, maven integration & git & GitHub Plugin
 
 New item pe click karna hai
-phir lean install 
+phir clean install 
 
 **/*.war
 
